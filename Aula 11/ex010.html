@@ -8,6 +8,14 @@
 <body>
     <h1>Sistema de multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <script>       
+        function calcular() {
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById(divres)
+            var vel = Number(txt.value)
+        }
+    </script>
 </body>
 </html>
