@@ -1,6 +1,8 @@
-function findLargerNumber(arr) {
+
+function findLargestNumber(arr) {
     if (arr.length === 0) {
-        return undefined;
+        console.log("The array is empty");
+        return;
     }
 
     let largest = arr[0];
@@ -11,5 +13,11 @@ function findLargerNumber(arr) {
         }
     }
 
-    return largest;
+    console.log("The largest number is: " + largest);
 }
+
+let numbers = [2, 43, 5, 76, 7];
+findLargestNumber(numbers);
+
+let empty = [];
+findLargestNumber(empty);
